@@ -1,0 +1,80 @@
+<!Doctype html>
+<html>
+   <head>
+        <title>Tooth Works</title>
+   </head>
+
+   <body>
+        <div class = "Horizontal">
+            <label id = "Name">Tooth Works</label>
+
+            <!--sorry hindi ko sure kung kailangan ko na e seperate sila ng div-->
+            <!--kasi sa doon sa image parang magkahiwalay sila. pa change nalang kung anong mas maganda-->
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">SERVICES</a>
+            <a href="">DENTIST</a>
+            <a href="">CONTACT</a>
+        </div>
+
+        <br>
+
+        <!--in styling pwede ata to para maging close yung label pati yung paragraph-->
+        <!--doon lang sa illalagay sa style-->
+        <!--margin-top: 5px;-->
+        <div class = "info">
+          <label>Be Toothified</label>
+          <p>we insure that every patient's is unforgettable because of the compassionate and calm atmosphere we give</p>
+        </div> 
+
+        
+        <!--set up form para ma submit sa js-->
+        <form action="/submit_procedure" method="POST" enctype="multipart/form-data">
+
+        <div class = "personal_Info">
+
+             <!--min length na pwedeng ilagay ni user pareho lang sa max pero pax sha-->
+             <!--required means na kailangan ni user na magkaroon ng laman siya bago maipasa-->
+            <label for="username">username*</label><br>        
+            <input type="text" id="username" placeholder="username" minlength="6"  maxlength="15" required><br>
+
+             <label for="Email">Email*</label><br>        
+            <input type="text" id="Email" placeholder="Email" minlength="6"  maxlength="15" required><br>
+
+             <label for="Contact_Num">Contact Number*</label><br>        
+            <input type="text" id="Contact_Num" placeholder="Contact Number" minlength="6"  maxlength="15" required><br>
+
+             <label for="Prefered_Date">Prefered Date*</label><br>        
+            <input type="text" id="Prefered_Date" placeholder="mm/dd/yyyy" minlength="6"  maxlength="15" required><br>
+
+            <!--name=Procedure kung kailangan ko siya palitan at gawing radio buttons-->
+            <!--radio buttons pag isa lang yung kailangan na e select na dental procedure-->
+        </div> 
+            <label for="Mr.">teeth cleaning</label>
+            <input type="checkbox" id="teeth_Cleaning" value="teeth Cleaning" name="Procedure">
+            <label for="Ms.">teeth filling</label>
+            <input type="checkbox" id="teeth_filling" value="teeth filling" name="Procedure">
+            <label for="PhD.">tooth implant</label>
+            <input type="checkbox" id="tooth_implant" value="tooth implant" name="Procedure">
+            <label for="PhD.">Dentures</label>
+            <input type="checkbox" id="Dentures" value="Dentures" name="Procedure">
+            <label for="PhD.">Veneers</label>
+            <input type="checkbox" id="Veneers" value="Veneers" name="Procedure">
+            <br>
+            <label for="Mr.">teeth Extraction</label>
+            <input type="checkbox" id="teeth_Extraction" value="teeth Extraction" name="Procedure">
+            <label for="Ms.">Dental Braces</label>
+            <input type="checkbox" id="dental_braces" value="dental Braces" name="Procedure">
+            <label for="PhD.">root Canal treatment</label>
+            <input type="checkbox" id="root_Canal_treatment" value="root Canal treatment" name="Procedure">
+            <label for="PhD.">teeth whitening</label>
+            <input type="checkbox" id="teeth_whitening" value="teeth whitening" name="Procedure">
+            <label for="PhD.">Panoramix XRay</label>
+            <input type="checkbox" id="Panoramix_XRay" value="Panoramix XRay" name="Procedure">
+        </div>
+
+        <br>
+        <button type="submit" value="submit">Book Appointment</button>
+    </form>
+   </body>
+</html>
